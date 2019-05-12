@@ -8,7 +8,8 @@ const App = () => {
 
   return ( 
     <div>
-      <label className="label" for="name">Enter name:</label>
+      {/* Below, 'for' was changed to 'htmlFor' after spotting a small error in the browser inspector console. */}
+      <label className="label" htmlFor="name">Enter name:</label>
       <input id="name" type="text"/>
       <button style={{backgroundColor: 'blue', color: 'white'}}>
         {buttonText}
